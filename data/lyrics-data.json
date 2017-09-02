@@ -1,0 +1,167 @@
+[
+  {
+    title: "All My Loving",
+    artist: "The Beatles",
+    id: '0',
+    lyrics: `[Chorus 1]
+Close your eyes and I'll kiss you
+Tomorrow I'll miss you
+Remember I'll always be true
+And then while I'm away
+I'll write home everyday
+And I'll send all my loving to you
+
+[Verse 1]
+I'll pretend that I'm kissing
+The lips I am missing
+And hope that my dreams will come true
+And then while I'm away
+I'll write home every day
+And I'll send all my loving to you
+
+[Chorus 2]
+All my loving I will send to you
+All my loving, darling I'll be true
+
+[Chorus 1]
+Close your eyes and I'll kiss you
+Tomorrow I'll miss you
+Remember I'll always be true
+And then while I'm away
+I'll write home everyday
+And I'll send all my loving to you`
+  },
+  {
+    title: "Wish You Were Here",
+    artist: "Pink Floyd",
+    id: '1',
+    lyrics: `So, so you think you can tell
+Heaven from hell
+Blue skies from pain
+Can you tell a green field
+From a cold steel rail?
+A smile from a veil?
+Do you think you can tell?
+Did they get you to trade
+Your heroes for ghosts?
+Hot ashes for trees?
+Hot air for a cool breeze?
+Cold comfort for change?
+And did you exchange
+A walk on part in the war
+For a lead role in a cage?
+
+How I wish, how I wish you were here
+We're just two lost souls
+Swimming in a fish bowl
+Year after year
+Running over the same old ground
+And how we found
+The same old fears
+Wish you were here`
+  },
+  {
+    title: "The Scientist",
+    artist: "Coldplay",
+    id: 2,
+    lyrics: `[Verse 1]
+Come up to meet you, tell you I'm sorry
+You don't know how lovely you are
+I had to find you, tell you I need you
+Tell you I set you apart
+Tell me your secrets, and ask me your questions
+Oh let's go back to the start
+Running in circles, coming up tails
+Heads on a science apart
+
+[Hook]
+Nobody said it was easy
+It's such a shame for us to part
+Nobody said it was easy
+No one ever said it would be this hard
+Oh take me back to the start
+
+[Verse 2]
+I was just guessing at numbers and figures
+Pulling your puzzles apart
+Questions of science, science and progress
+Do not speak as loud as my heart
+Tell me you love me, come back and haunt me
+Oh and I rush to the start
+Running in circles, chasing our tails
+Coming back as we are
+
+[Hook]
+Nobody said it was easy
+It's such a shame for us to part
+Nobody said it was easy
+No one ever said it would be so hard
+I'm going back to the start`
+  },
+  {
+    title: "In My Place",
+    artist: "Coldplay",
+    id: 3,
+    lyrics: ""
+  },
+  {
+    title: "Politik",
+    artist: "Coldplay",
+    id: 4,
+    lyrics: ""
+  },
+  {
+    title: "Jailbreak",
+    artist: "AC/DC",
+    id: 5,
+    lyrics: ""
+  },
+  {
+    title: "Dirty Deeds (Done Dirt Cheap)",
+    artist: "AC/DC",
+    id: 6,
+    lyrics: ""
+  },
+  {
+    title: "This Will Be Our Year",
+    artist: "OK Go",
+    id: 7,
+    lyrics: ""
+  },
+  {
+    title: "Istanbul",
+    artist: "They Might Be Giants",
+    id: 8,
+    lyrics: ""
+  },
+  {
+    title: "End Love",
+    artist: "OK Go",
+    id: 9,
+    lyrics: ""
+  },
+  {
+    title: "All Along the Watchtower",
+    artist: "Jimi Hendrix",
+    id: 10,
+    lyrics: ""
+  },
+  {
+    title: "Magical Mystery Tour",
+    artist: "The Beatles",
+    id: 11,
+    lyrics: ""
+  },
+  {
+    title: "Move to the City",
+    artist: "Guns 'n Roses",
+    id: 12,
+    lyrics: ""
+  },
+  {
+    title: "No Milk Today",
+    artist: "Herman's Hermits",
+    id: 13,
+    lyrics: ""
+  }
+]
