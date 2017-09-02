@@ -3,6 +3,7 @@
     {
       title: "All My Loving",
       artist: "The Beatles",
+      key: "C",
       id: '0',
       lyrics: `[Chorus 1]
 Close your eyes and I'll kiss you
@@ -35,6 +36,7 @@ And I'll send all my loving to you`
     {
       title: "Wish You Were Here",
       artist: "Pink Floyd",
+      key: "G",
       id: '1',
     lyrics: `So, so you think you can tell
 Heaven from hell
@@ -169,6 +171,7 @@ I'm going back to the start`
   sets: [
     {
       title: "thoughtful",
+      id: 0,
       songs: [ 13, 3, 1, 2 ]
     }
   ]

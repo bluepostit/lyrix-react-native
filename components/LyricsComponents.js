@@ -11,9 +11,39 @@ import {
   View,
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import Tabs from 'react-native-tabs';
 import SortableListView from 'react-native-sortable-listview';
-import { LyricsViewStyles, LyricsListStyles, LyricsListItemStyles } from './LyricsComponentStyles.js';
+import {
+  LyricsTabNavBarStyles,
+  LyricsViewStyles,
+  LyricsListStyles,
+  LyricsListItemStyles,
+  SetListStyles,
+  SetListItemStyles,
+ } from './LyricsComponentStyles.js';
 
+class LyricsNavTabBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 'songs'
+    };
+  }
+
+  render() {
+    return (
+      <Tabs
+        style={LyricsNavTabBar.tabBar}
+        selectedStyle={{color:'red'}}
+        selected={this.state.page}
+        onSelect={(el) => this.setState({page: el.props.name})}
+      >
+        <Text name="allSongs">Songs</Text>
+        <Text name="sets">Sets</Text>
+      </Tabs>        
+    );
+  }
+}
 
 const LyricsView = (props) => {
   let lyrics = props.lyrics;
@@ -27,13 +57,15 @@ const LyricsView = (props) => {
 };
 
 const LyricsListItem = ({lyrics, onPress, separators}) => {
+  let firstRowText = lyrics.title +
+    (!!lyrics.key ? (" (" + lyrics.key + ")") : "");
   return (
     <TouchableOpacity
       onPress={() => onPress(lyrics)}
       onShowUnderlay={separators.highlight}
       onHideUnderlay={separators.unhighlight}>
       <View style={LyricsListItemStyles.item}>
-        <Text style={LyricsListItemStyles.textTitle}>{lyrics.title}</Text>
+        <Text style={LyricsListItemStyles.textTitle}>{firstRowText}</Text>
         <Text style={LyricsListItemStyles.textArtist}>{lyrics.artist}</Text>
       </View>
     </TouchableOpacity>
@@ -54,13 +86,7 @@ class SetList extends Component {
   }
 
   onItemPress = (item) => {
-    let title = () => (
-      <Text style={{fontWeight: 'bold'}}>{item.title}</Text>
-    )
-    Actions.setView({
-      set : item,
-      title: title
-    });
+    this.props.onItemPress(item);
   }
 
   renderItem = ({item, separators}) => {
@@ -74,7 +100,6 @@ class SetList extends Component {
   }
 
   renderSeparator = () => {
-    console.log('rendering separator');
     return (
       <View style={LyricsListStyles.separator}/>
     );
@@ -82,7 +107,7 @@ class SetList extends Component {
 
   render() {
     return (
-      <View style={LyricsListStyles.list}>
+      <View style={SetListStyles.list}>
         <FlatList
           data={this.props.sets}
           keyExtractor={item => item.id}
@@ -93,6 +118,20 @@ class SetList extends Component {
     );
   }
 }
+
+/* An individual set item in its containing list */
+const SetListItem = ({set, onPress, separators}) => {
+  return (
+    <TouchableOpacity
+      onPress={() => onPress(set)}
+      onShowUnderlay={separators.highlight}
+      onHideUnderlay={separators.unhighlight}>
+      <View style={SetListItemStyles.item}>
+        <Text style={SetListItemStyles.textTitle}>{set.title}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+};
 
 /* View for an individual set (songlist) */
 class SetView extends Component {
@@ -124,17 +163,17 @@ class SetView extends Component {
   }
 
   renderSeparator = () => {
-    console.log('rendering separator');
     return (
       <View style={LyricsListStyles.separator}/>
     );
   };
 
   render() {
+    let songs = this.props.set.songs;
     return (
       <View style={LyricsListStyles.list}>
         <FlatList
-          data={this.props.lyrics}
+          data={songs}
           keyExtractor={item => item.id}
           renderItem={this.renderItem}>
           ItemSeparatorComponent={this.renderSeparator}
@@ -146,4 +185,4 @@ class SetView extends Component {
 
 
 
-export { SetList, SetView, LyricsView };
+export { SetList, SetView, LyricsView, LyricsNavTabBar };

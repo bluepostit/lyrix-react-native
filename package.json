@@ -24,6 +24,8 @@
     "react-native": "^0.47.0",
     "react-native-router-flux": "^3.41.0",
     "react-native-sortable-listview": "^0.2.5",
-    "react-navigation": "^1.0.0-beta.11"
+    "react-native-tabs": "^1.0.9",
+    "react-navigation": "^1.0.0-beta.11",
+    "watchman": "^0.1.8"
   }
 }

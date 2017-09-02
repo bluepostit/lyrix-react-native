@@ -1,5 +1,13 @@
 import { StyleSheet } from 'react-native';
 
+const LyricsTabNavBarStyles = StyleSheet.create({
+  tabBar: {
+    paddingTop: 50,
+    paddingBottom: 50,
+    margin: 80
+  }
+})
+
 const LyricsViewStyles = StyleSheet.create({
   container: {
     //flex: 1,
@@ -56,6 +64,34 @@ const LyricsListItemStyles = StyleSheet.create({
     fontStyle: 'italic'
   },
 })
+
+
+const SetListStyles = StyleSheet.create({
+  list: {
+    flex: 1,
+    paddingTop: 25,
+    marginTop: 28,
+  },
+  separator: {
+    height: 10,
+    backgroundColor: "black",
+    color: "black",
+  },
+})
+
+const SetListItemStyles = StyleSheet.create({
+  item: {
+    padding: 6,
+    marginTop: 1,
+    borderBottomWidth: 0,
+    borderTopWidth: 0,
+  },
+  textTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+})
+
 const styles = StyleSheet.create({
   container: {
    flex: 1,
@@ -71,4 +107,11 @@ const styles = StyleSheet.create({
   }
 })
 
-export { LyricsViewStyles, LyricsListStyles, LyricsListItemStyles };
+export {
+  LyricsTabNavBarStyles,
+  LyricsViewStyles,
+  LyricsListStyles,
+  LyricsListItemStyles,
+  SetListStyles,
+  SetListItemStyles,
+};
