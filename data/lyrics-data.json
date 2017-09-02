@@ -105,7 +105,49 @@ I'm going back to the start`
       title: "In My Place",
       artist: "Coldplay",
       id: 3,
-      lyrics: ""
+      lyrics: `[Verse 1]
+In my place, in my place
+Were lines that I couldn't change
+I was lost, oh yeah
+I was lost, I was lost
+Crossed lines I shouldn't have crossed
+I was lost, oh yeah
+
+[Hook]
+Yeah, how long must you wait for it?
+Yeah, how long must you pay for it?
+Yeah, how long must you wait for it?
+For it
+
+[Verse 2]
+I was scared, I was scared
+Tired and underprepared
+But I wait for it
+And if you go, if you go
+And leave me down here on my own
+Well I'll wait for you, yeah
+
+[Hook]
+Yeah, how long must you wait for it?
+Yeah, how long must you pay for it?
+Yeah, how long must you wait for it?
+For it
+
+[Bridge]
+Sing it please, please, please
+Come back, come sing to me
+To me, me
+Come on and sing it out
+Now, now
+Come on and sing it out
+To me, me
+Come back, come sing it
+
+[Outro]
+In my place, in my place
+Were lines that I couldn't change
+I was lost, oh yeah
+Oh, yeah...`
     },
     {
       title: "Politik",
@@ -170,9 +212,19 @@ I'm going back to the start`
   ],
   sets: [
     {
-      title: "thoughtful",
+      title: "All Songs",
       id: 0,
+      songs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    },
+    {
+      title: "thoughtful",
+      id: 1,
       songs: [ 13, 3, 1, 2 ]
+    },
+    {
+      title: "Beatles",
+      id: 2,
+      songs: [0, 11]
     }
   ]
 }

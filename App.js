@@ -57,18 +57,37 @@ class MainPage extends Component {
   }
 
   getLyricsListForSet(set) {
+    if (!!set.isExpanded) {
+      return set;
+    }
     let newSongs = set.songs.map((id) => {
       return this.state.lyricsData.songs.find((song) => (song.id == id));
     });
     let newSet = {
       id: set.id,
       title: set.title,
-      songs: newSongs
+      songs: newSongs,
+      isExpanded: true,
     };
     return newSet;
   }
 
+  getAllSets(includePseudoSets) {
+    let sets = this.state.lyricsData.sets;
+    if (includePseudoSets) {
+      let all = {
+        title: 'All Songs',
+        id: '-1',
+        songs: this.state.lyricsData.songs,
+        isExpanded: true,
+      };
+      sets = [all].concat(sets);
+    }
+    return sets;
+  }
+
   render() {
+    let allSets = this.getAllSets(false);
     return (
       <View style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
         <Router>
@@ -78,7 +97,7 @@ class MainPage extends Component {
               title="All Sets"
               component={() => (
                 <SetList
-                  sets={this.state.lyricsData.sets}
+                  sets={allSets}
                   onItemPress={(item) => (this.onSetListItemPress(item))}
                 />
               )}
