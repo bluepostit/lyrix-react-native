@@ -5,6 +5,12 @@ const LyricsTabNavBarStyles = StyleSheet.create({
     paddingTop: 50,
     paddingBottom: 50,
     margin: 80
+  },
+  navBar: {
+    backgroundColor: 'steelblue',
+  },
+  navBarText: {
+
   }
 })
 
@@ -12,8 +18,16 @@ const LyricsViewStyles = StyleSheet.create({
   container: {
     //flex: 1,
     paddingTop: 43,
+    paddingBottom: 100,
     paddingLeft: 6,
     paddingVertical: 20,
+  },
+  containerDark: {
+    paddingTop: 43,
+    paddingBottom: 100,
+    paddingLeft: 6,
+    paddingVertical: 20,
+    backgroundColor: 'black',
   },
   title: {
     fontSize: 20,
@@ -25,17 +39,26 @@ const LyricsViewStyles = StyleSheet.create({
     textAlign: 'center'
   },
   lyrics: {
-    marginLeft: 20,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 20,
     fontSize: 18,
   },
+  lyricsDark: {
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 20,
+    fontSize: 18,
+    color: 'wheat',
+  }
 })
 
 const LyricsListStyles = StyleSheet.create({
-    list: {
+  list: {
     flex: 1,
     paddingTop: 25,
     marginTop: 28,
+    backgroundColor: 'black',
   },
   separator: {
     height: 10,
@@ -58,10 +81,12 @@ const LyricsListItemStyles = StyleSheet.create({
   textTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white',
   },
   textArtist: {
     fontSize: 16,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    color: 'white',
   },
 })
 
@@ -71,6 +96,7 @@ const SetListStyles = StyleSheet.create({
     flex: 1,
     paddingTop: 25,
     marginTop: 28,
+    backgroundColor: 'black',
   },
   separator: {
     height: 10,
@@ -89,6 +115,7 @@ const SetListItemStyles = StyleSheet.create({
   textTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white',
   },
 })
 

@@ -48,10 +48,10 @@ class LyricsNavTabBar extends Component {
 const LyricsView = (props) => {
   let lyrics = props.lyrics;
   return (
-    <ScrollView contentContainerStyle={LyricsViewStyles.container}>
+    <ScrollView contentContainerStyle={LyricsViewStyles.containerDark}>
       {/*<Text style={lyricsViewStyles.title}>{lyrics.title}</Text>*/}
       {/*<Text style={lyricsViewStyles.artist}>{lyrics.artist}</Text>*/}
-      <Text style={LyricsViewStyles.lyrics}>{lyrics.lyrics}</Text>
+      <Text style={LyricsViewStyles.lyricsDark}>{lyrics.lyrics}</Text>
     </ScrollView>
   );
 };
@@ -153,6 +153,7 @@ class SetView extends Component {
   }
 
   renderItem = ({item, separators}) => {
+    // console.log('setView.renderItem()', item.title);
     return (
       <LyricsListItem
         lyrics={item}
@@ -169,6 +170,7 @@ class SetView extends Component {
   };
 
   render() {
+    // console.log('SetView.render()');
     let songs = this.props.set.songs;
     return (
       <View style={LyricsListStyles.list}>
