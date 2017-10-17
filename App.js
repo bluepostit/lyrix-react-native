@@ -1,48 +1,9 @@
 import React, { Component } from 'react';
 import { StatusBar, View } from 'react-native';
-import { Actions } from 'react-native-router-flux'
-import { Router, Scene, Stack } from 'react-native-router-flux';
+import { Actions, Router, Scene, Stack } from 'react-native-router-flux';
 import { SetList, SetView, LyricsView, LyricsNavTabBar } from './components/LyricsComponents.js';
 import { LyricsTabNavBarStyles } from './components/LyricsComponentStyles.js';
 import lyricsData  from './data/lyrics-data.json';
-
-{/*class LyricsTabbedView extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: lyricsData
-    };
-  }
-
-  renderSetList () {
-    console.log('renderSetList()');
-    return (
-      <Text>Hello</Text>
-    );
-  }
-
-  onSetListItemPress = (item) => {
-    Actions.setView({set: item})
-  }
-
-  render() {
-    console.log('LyricsTabbedView render()');
-    return (
-      <View>
-        <Scene key="sets" title="Sets">
-          <Scene
-            key="allSets"
-            title="All Sets"
-            component={SetList}
-            />
-          <Scene key="setView" title="A Set" component={SetView}/>
-        </Scene>
-        <Scene key="allSongs" title="All" component={SetView}/>
-        <SetList sets={lyricsData.sets} onItemPress={(item) => (this.onSetListItemPress(item))}/>
-      </View>
-    );
-  }
-}*/}
 
 class MainPage extends Component {
   constructor(props) {
