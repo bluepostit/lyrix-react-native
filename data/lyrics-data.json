@@ -1057,6 +1057,7 @@ And all the things that you do`
       title: "We Will Become Silhouettes",
       artist: "The Postal Service",
       id: 28,
+      key: 'F',
       lyrics: `[Verse 1]
 I've got a cupboard with cans of food,
 Filtered water and pictures of you,
@@ -1090,6 +1091,7 @@ And we will become silhouettes when our bodies finally go`
       title: "Mr. Tambourine Man",
       artist: "Bob Dylan",
       id: 29,
+      key: 'F',
       lyrics: `[Chorus]
 Hey Mr. Tambourine Man, play a song for me
 I'm not sleepy and there is no place I'm going to
@@ -1159,6 +1161,7 @@ In the jingle jangle mornin' I'll come followin' you`
       title: "Stand By Me",
       artist: "Oasis",
       id: 30,
+      key: 'F',
       lyrics: `[Verse 1]
 Made a meal and threw it up on Sunday
 I've got a lot of things to learn
